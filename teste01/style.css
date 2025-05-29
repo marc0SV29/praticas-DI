@@ -1,0 +1,39 @@
+.page{
+            display: grid;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            grid-gap: 10px;
+            grid-template-areas: 
+            ' header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer'
+            ;
+            background-color: antiquewhite;
+            grid-template-rows: 10vh 75vh 5vh;
+        }
+        .item{
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header{
+            grid-area: header;
+            background-color: aqua;
+            
+        }
+        .menu{
+            grid-area: menu;
+            background-color: greenyellow;
+        }
+        .main{
+            grid-area: main;
+            background-color: deeppink;
+        }
+        .right{
+            grid-area: right;
+            background-color: goldenrod;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: mediumslateblue;
+            grid-template-rows: minmax(100px,200px);
+        }
